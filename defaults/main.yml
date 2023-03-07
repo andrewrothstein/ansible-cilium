@@ -1,0 +1,11 @@
+---
+# defaults file for cilium
+cilium_ver: 0.13.1
+cilium_arch_map:
+  aarch32: arm
+  386: '386'
+  x86_64: amd64
+cilium_parent_install_dir: /usr/local
+cilium_mirror: https://github.com/cilium/cilium-cli/releases/download
+cilium_checksums:
+  '0.13.1':

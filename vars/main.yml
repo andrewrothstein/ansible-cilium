@@ -1,0 +1,12 @@
+---
+# vars file for cilium
+cilium_os: '{{ ansible_system | lower }}'
+cilium_arch: '{{ cilium_arch_map[ansible_architecture] }}'
+cilium_platform: '{{ cilium_os }}-{{ cilium_arch }}'
+cilium_url: '{{ cilium_mirror }}/v{{ cilium_ver }}/cilium-{{ cilium_platform }}.{{ cilium_archive_type | default("tar.gz") }}'
+cilium_checksum: '{{ cilium_checksums[cilium_ver][cilium_platform] }}'
+cilium_name: cilium-{{ cilium_ver }}-{{ cilium_platform }}
+cilium_tmp_archive: '{{ cilium_tmp_dir | default("/tmp") }}/{{ cilium_name }}.{{ cilium_archive_type | default("tar.gz") }}'
+cilium_install_subdir: '{{ cilium_parent_install_dir }}/{{ cilium_name }}'
+cilium_install_exe: '{{ cilium_install_subdir }}/cilium'
+cilium_install_link: '{{ cilium_parent_install_dir }}/bin/cilium'

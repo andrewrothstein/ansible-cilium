@@ -1,0 +1,58 @@
+---
+- include_role:
+    name: andrewrothstein.unarchive-deps
+- name: resolve platform specific vars
+  include_vars: '{{ item }}'
+  with_first_found:
+    - files:
+        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - '{{ ansible_distribution }}.yml'
+        - '{{ ansible_os_family }}.yml'
+      skip: true
+      paths:
+        - '{{ role_path }}/vars'
+- name: check for install at {{ cilium_install_exe }}
+  become: true
+  become_user: root
+  stat:
+    path: '{{ cilium_install_exe }}'
+  register: cilium_binary
+- when: not cilium_binary.stat.exists
+  block:
+    - name: mkdir {{ cilium_install_subdir }}
+      become: true
+      become_user: root
+      file:
+        path: '{{ cilium_install_subdir }}'
+        state: directory
+        mode: 0755
+    - name: downloading {{ cilium_url }} to {{ cilium_tmp_archive }}
+      become: true
+      become_user: root
+      get_url:
+        url: '{{ cilium_url }}'
+        checksum: '{{ cilium_checksum }}'
+        dest: '{{ cilium_tmp_archive }}'
+        mode: 0644
+    - name: unarchive {{ cilium_tmp_archive }} to {{ cilium_install_subdir }}
+      become: true
+      become_user: root
+      unarchive:
+        remote_src: true
+        src: '{{ cilium_tmp_archive }}'
+        dest: '{{ cilium_install_subdir }}'
+        creates: '{{ cilium_install_exe }}'
+  always:
+    - name: rm {{ cilium_tmp_archive }}
+      become: true
+      become_user: root
+      file:
+        path: '{{ cilium_tmp_archive }}'
+        state: absent
+- name: linking {{ cilium_install_link }} to {{ cilium_install_exe }}
+  become: true
+  become_user: root
+  file:
+    dest: '{{ cilium_install_link }}'
+    src: '{{ cilium_install_exe }}'
+    state: link
