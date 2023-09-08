@@ -25,6 +25,9 @@ dl_ver() {
     dl $ver linux 386
     dl $ver linux amd64
     dl $ver linux arm
+    dl $ver windows 386
+    dl $ver windows amd64
+    dl $ver windows arm64
 }
 
-dl_ver ${1:-0.13.2}
+dl_ver ${1:-0.15.7}
