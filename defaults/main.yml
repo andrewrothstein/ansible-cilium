@@ -1,9 +1,10 @@
 ---
 # defaults file for cilium
-cilium_ver: 0.15.7
+cilium_ver: 0.15.10
 cilium_arch_map:
   arm64: arm64
   aarch32: arm
+  aarch64: arm64
   x86_32: '386'
   x86_64: amd64
 cilium_parent_install_dir: /usr/local
@@ -48,3 +49,20 @@ cilium_checksums:
     windows-amd64: sha256:2323dd1d900f7e8392a929fa16bfa3a67f8591850e1d31f43abef5fc956e3ab4
     # https://github.com/cilium/cilium-cli/releases/download/v0.15.7/cilium-windows-arm64.tar.gz.sha256sum
     windows-arm64: sha256:0c17cc6156fbf30db1b537ad901e1e2094c83aeaf62abec3f5f4cb541e8679b2
+  '0.15.10':
+    # https://github.com/cilium/cilium-cli/releases/download/v0.15.10/cilium-darwin-amd64.tar.gz.sha256sum
+    darwin-amd64: sha256:c4169bc7ff027fd7aec11e5e6751b32c7af216249bbe714fb35098aa667fa5bc
+    # https://github.com/cilium/cilium-cli/releases/download/v0.15.10/cilium-darwin-arm64.tar.gz.sha256sum
+    darwin-arm64: sha256:5d5f5002f5b7cd72bca8df6a1b57aab3ff22d286d92ae66613ebd0c968efdca0
+    # https://github.com/cilium/cilium-cli/releases/download/v0.15.10/cilium-linux-386.tar.gz.sha256sum
+    linux-386: sha256:d94686ed482191f956ed6fcd859262c26e8e15c57e8cea6c346c08fae44e7160
+    # https://github.com/cilium/cilium-cli/releases/download/v0.15.10/cilium-linux-amd64.tar.gz.sha256sum
+    linux-amd64: sha256:e133730016be2676c394b3ab19ee5be5887229d28829a22ddb94ddb811980c19
+    # https://github.com/cilium/cilium-cli/releases/download/v0.15.10/cilium-linux-arm.tar.gz.sha256sum
+    linux-arm: sha256:5df4a19f2e4255063ff41b06482d890b0968239e7975c302652d4732de2c398e
+    # https://github.com/cilium/cilium-cli/releases/download/v0.15.10/cilium-windows-386.tar.gz.sha256sum
+    windows-386: sha256:8eff80e0123cb2ba22a2161f3bc09fc4a87e5b4a8fdde4d26789f2e3625774cd
+    # https://github.com/cilium/cilium-cli/releases/download/v0.15.10/cilium-windows-amd64.tar.gz.sha256sum
+    windows-amd64: sha256:bd8fcd1721f883c091cbb2af7c65b20394405ef95d678525bed313cf8e88839e
+    # https://github.com/cilium/cilium-cli/releases/download/v0.15.10/cilium-windows-arm64.tar.gz.sha256sum
+    windows-arm64: sha256:735916900c1de3e32aac8ef1403e44091eb4674cd1a1ad0819d5533ab255011e
