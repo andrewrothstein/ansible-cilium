@@ -60,6 +60,8 @@ cilium_checksums:
     linux-amd64: sha256:e133730016be2676c394b3ab19ee5be5887229d28829a22ddb94ddb811980c19
     # https://github.com/cilium/cilium-cli/releases/download/v0.15.10/cilium-linux-arm.tar.gz.sha256sum
     linux-arm: sha256:5df4a19f2e4255063ff41b06482d890b0968239e7975c302652d4732de2c398e
+    # https://github.com/cilium/cilium-cli/releases/download/v0.15.10/cilium-linux-arm64.tar.gz.sha256sum
+    linux-arm64: sha256:bfe52de692871c954690ad980fa0f4854784bac94521a171c476e87560dad9b8
     # https://github.com/cilium/cilium-cli/releases/download/v0.15.10/cilium-windows-386.tar.gz.sha256sum
     windows-386: sha256:8eff80e0123cb2ba22a2161f3bc09fc4a87e5b4a8fdde4d26789f2e3625774cd
     # https://github.com/cilium/cilium-cli/releases/download/v0.15.10/cilium-windows-amd64.tar.gz.sha256sum
