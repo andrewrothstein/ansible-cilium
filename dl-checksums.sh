@@ -31,4 +31,4 @@ dl_ver() {
     dl $ver windows arm64
 }
 
-dl_ver ${1:-0.15.10}
+dl_ver ${1:-0.15.11}
