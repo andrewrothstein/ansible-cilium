@@ -22,13 +22,10 @@ dl_ver() {
     printf "  '%s':\n" $ver
     dl $ver darwin amd64
     dl $ver darwin arm64
-    dl $ver linux 386
     dl $ver linux amd64
-    dl $ver linux arm
     dl $ver linux arm64
-    dl $ver windows 386
     dl $ver windows amd64
     dl $ver windows arm64
 }
 
-dl_ver ${1:-0.15.11}
+dl_ver ${1:-0.15.19}
