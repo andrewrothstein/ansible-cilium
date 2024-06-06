@@ -1,7 +1,4 @@
 ---
-- name: Installing andrewrothstein.unarchivedep
-  ansible.builtin.include_role:
-    name: andrewrothstein.unarchivedeps
 - name: Resolve platform specific vars
   ansible.builtin.include_vars: '{{ item }}'
   with_first_found:
@@ -36,6 +33,9 @@
         checksum: '{{ cilium_checksum }}'
         dest: '{{ cilium_tmp_archive }}'
         mode: '644'
+    - name: Installing andrewrothstein.unarchivedep
+      ansible.builtin.include_role:
+        name: andrewrothstein.unarchivedeps
     - name: Unarchive {{ cilium_tmp_archive }} to {{ cilium_install_subdir }}
       become: true
       become_user: root
