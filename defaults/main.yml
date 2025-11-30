@@ -1,6 +1,6 @@
 ---
 # defaults file for cilium
-cilium_ver: 0.18.3
+cilium_ver: 0.18.8
 cilium_arch_map:
   arm64: arm64
   aarch32: arm
@@ -347,3 +347,68 @@ cilium_checksums:
     windows-amd64: sha256:3dd6173fc879a7494793a7a94724dfaff572b3baa2edb971fdd34b1e0c1e98ac
     # https://github.com/cilium/cilium-cli/releases/download/v0.18.3/cilium-windows-arm64.zip.sha256sum
     windows-arm64: sha256:3850cbc6162550531d20353f5e403729fa911b08ebed32bb56b5b4144d381644
+  '0.18.4':
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.4/cilium-darwin-amd64.tar.gz.sha256sum
+    darwin-amd64: sha256:9c3cdf7b182f0955ef18f731285da1e2e0c785aa8e820a3b329f8a1472bfcb32
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.4/cilium-darwin-arm64.tar.gz.sha256sum
+    darwin-arm64: sha256:257ee1f62cbdbc460ce41d15d6f6fa2846b5a3c28e60fbf5775b8c7078b9f618
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.4/cilium-linux-amd64.tar.gz.sha256sum
+    linux-amd64: sha256:6d7d2831380e8741cd46ef92e8f5132c66864311432fae5ab572608ca2d69353
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.4/cilium-linux-arm64.tar.gz.sha256sum
+    linux-arm64: sha256:ee438745fedf3ffeb289a12e5d1a8b1a4e8f931a66835ad705bd491461051087
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.4/cilium-windows-amd64.zip.sha256sum
+    windows-amd64: sha256:de0937850a6512f41dafac7bfee2fed9030da73023de06a33d17f4abd5bf17de
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.4/cilium-windows-arm64.zip.sha256sum
+    windows-arm64: sha256:fba5c7f8847c0119f3f5e01811b32f8d81d87bc3ae9df208488784ddfcfcf3df
+  '0.18.5':
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.5/cilium-darwin-amd64.tar.gz.sha256sum
+    darwin-amd64: sha256:41968dca22bf634e68ba63cfc55ac86f63ee3a37a38682dcfd9e4334a46f6175
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.5/cilium-darwin-arm64.tar.gz.sha256sum
+    darwin-arm64: sha256:3e49ebae0c16e80f1ddef73b2b2a9ba55186c9d9c4911888c2e9c2f28c2d6dd1
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.5/cilium-linux-amd64.tar.gz.sha256sum
+    linux-amd64: sha256:e63893745b67f58032d9b4f142ae7d6e97286df66af27ff24cd72dc81efc9ff9
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.5/cilium-linux-arm64.tar.gz.sha256sum
+    linux-arm64: sha256:54a517c05e1f60c4d3230191edcdc80647dc666173896a8e724817694aae4194
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.5/cilium-windows-amd64.zip.sha256sum
+    windows-amd64: sha256:068009e2cdbe9290ef7c601d060cb56d9f8aa2636c2d54611675ad879ec40698
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.5/cilium-windows-arm64.zip.sha256sum
+    windows-arm64: sha256:deb50a1bba7265f030735c76308f372da877d22d4d014c3d4c4dc224c0b85390
+  '0.18.6':
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.6/cilium-darwin-amd64.tar.gz.sha256sum
+    darwin-amd64: sha256:41b77bee930e2f30c026d8064641135a1e5d9671d86abf2b708bb05d2ddc4d55
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.6/cilium-darwin-arm64.tar.gz.sha256sum
+    darwin-arm64: sha256:9e0ccce6ac56c46eced5380d9ceb3846b1f12ceb074ed2bf0969304c1dfbc97c
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.6/cilium-linux-amd64.tar.gz.sha256sum
+    linux-amd64: sha256:075bcc605308ff40a488d75a9a8555713dc0139d36536e032d3ebc2a1e7a9f4d
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.6/cilium-linux-arm64.tar.gz.sha256sum
+    linux-arm64: sha256:7639c69b410c26d0276fe1297d53e9573f094b56822bd01e85153acb3ca7dd43
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.6/cilium-windows-amd64.zip.sha256sum
+    windows-amd64: sha256:43e695719cca62b93394e5a4cdb72916947b7beaad249c8600ddeac4c21cee33
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.6/cilium-windows-arm64.zip.sha256sum
+    windows-arm64: sha256:ca50b1dbfd9401a8a80085d67826653db81f102b2f0e26cade041b2b8255f724
+  '0.18.7':
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.7/cilium-darwin-amd64.tar.gz.sha256sum
+    darwin-amd64: sha256:e0f9c37dc2c436573b1a5e900a0b58c3e0e5bf51e2504f96ccbaee2b23ba6d97
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.7/cilium-darwin-arm64.tar.gz.sha256sum
+    darwin-arm64: sha256:09a221d0bcadc2b28eb0bc1ea1d2bc5736b8ba1f02cd97a8cd4e7326bc7a91ef
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.7/cilium-linux-amd64.tar.gz.sha256sum
+    linux-amd64: sha256:7f5ff96f1793ee389ef77435a72debf122f5ec253d41418fca99d2c21472016a
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.7/cilium-linux-arm64.tar.gz.sha256sum
+    linux-arm64: sha256:dbaa2ab4b1969f4402adf430d6a1bd914c5ab52475ec68f50b3af6fa7fe2fecc
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.7/cilium-windows-amd64.zip.sha256sum
+    windows-amd64: sha256:840be38e81082f7beed95ab7e4637985125ba7fa94a6184b234c495a1a23e596
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.7/cilium-windows-arm64.zip.sha256sum
+    windows-arm64: sha256:c2bb62956ba8aa6a72882cf6d6e1111f32105efa3b512d94a16a2b5d88db9a57
+  '0.18.8':
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.8/cilium-darwin-amd64.tar.gz.sha256sum
+    darwin-amd64: sha256:8510358dae4fd5c1eba014de2cc36059f5db2241919c66778fef4568bba8851e
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.8/cilium-darwin-arm64.tar.gz.sha256sum
+    darwin-arm64: sha256:97add6fc7a98871fe824ded11c7b226d44b1da2b80894fe283c63067701804d9
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.8/cilium-linux-amd64.tar.gz.sha256sum
+    linux-amd64: sha256:422940f0b7eb6eabc1e126945d1772e3f824c3f4f9fbb0df0dbbf00a271311ba
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.8/cilium-linux-arm64.tar.gz.sha256sum
+    linux-arm64: sha256:44e6dd188336b9168986945c99f8e0882ec4e54a4b6422d44d8e36ec449ba929
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.8/cilium-windows-amd64.zip.sha256sum
+    windows-amd64: sha256:4e4d0225d0b23602518ef8246815dc24897f6b82cfa85072301fab1bf7468ba6
+    # https://github.com/cilium/cilium-cli/releases/download/v0.18.8/cilium-windows-arm64.zip.sha256sum
+    windows-arm64: sha256:03d76c9d104f89e249178b2d7aacd5650945b4b3880e942b74d7647485afd04a
